@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body class="bg-teal-300 mx-2 md:mx-10 lg:mx-32 xl:mx-48">
+    <!-- Navigasi -->
+    <div class="flex justify-between items-center  my-2 bg-white p-2">
+        <div>
+            <svg class="w-10 h-10" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg">
+            <path 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4">
+            </path>
+            </svg>
+        </div>
+        <div class="flex">
+            <div class="hover:bg-blue-400 cursor-pointer px-3 py-1 rounded">Daftar Pekerja</div>
+            <div class="hover:bg-blue-400 cursor-pointer px-3 py-1 rounded">Training Data</div>
+            <div class="hover:bg-blue-400 cursor-pointer px-3 py-1 rounded">Absen</div>
+        </div>
+    </div>
+    <div class="">
+        {% block content %} 
+        {% endblock %} 
+    </div>
+</body>
+</html>
